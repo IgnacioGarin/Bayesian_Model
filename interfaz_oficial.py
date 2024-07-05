@@ -56,7 +56,7 @@ listo=False
 
 # Primera sección: Título y descripción
 with st.container():
-  st.title('Modelo predictivo para la evaluación del deterioro coginitivo en personas mayores')
+  st.title('Modelo predictivo para la evaluación del deterioro cognitivo en personas mayores')
   st.write('''Descripción: Modelo predictivo basado en redes bayesianas que estima la severidad de la demencia en personas mayores utilizando
    datos neuropsicológicos derivados de una versión reducida del Examen Cognitivo de Addenbrooke III (ACE-III).''')
   st.markdown("---")
@@ -88,11 +88,11 @@ with st.container():
 
     if st.button('Realizar predicción'):
         prediccion = predict_from_inputs(inputs, model, nombre_variables)
-        st.write(f'La predicción del modelo es: {prediccion}')
+        st.write(f'La predicción del modelo es nivel: {prediccion} de 3')
 
 # Cuarta sección: Descargar plantilla y cargar información
 with st.container():
-  st.header('Cargar muchos registros')
+  st.header('Cargar múltiples registros')
   st.write('Si desea cargar más de 1 registro, para mayor eficiencia, le recomendamos utilizar esta sección:')
   col1, col2 = st.columns(2)
   with col1:
